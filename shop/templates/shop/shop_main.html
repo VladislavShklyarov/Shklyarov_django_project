@@ -1,0 +1,104 @@
+{% extends 'django_app/layout.html' %}
+{% load static %}
+
+{% block title %} Магазин {% endblock %}
+
+{% block content %}
+    <table class = telescope_table>
+  <tr>
+    <td>
+      <h3>Телескоп 1</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_1.jpg' %}" alt="Телескоп 1">
+      <p>Цена: 1000 рублей</p>
+      <form>
+        <label for="quantity1">Количество:</label>
+        <input type="number" id="quantity1" name="quantity1" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 2</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_2.jpg' %}" alt="Телескоп 2">
+      <p>Цена: 1500 рублей</p>
+      <form>
+        <label for="quantity2">Количество:</label>
+        <input type="number" id="quantity2" name="quantity2" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 3</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_3.jpg' %}" alt="Телескоп 3">
+      <p>Цена: 2000 рублей</p>
+      <form>
+        <label for="quantity3">Количество:</label>
+        <input type="number" id="quantity3" name="quantity3" min="0" max="10" value="1">
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Телескоп 4</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_4.jpg' %}" alt="Телескоп 4">
+      <p>Цена: 1200 рублей</p>
+      <form>
+        <label for="quantity4">Количество:</label>
+        <input type="number" id="quantity4" name="quantity4" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 5</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_5.jpg' %}" alt="Телескоп 5">
+      <p>Цена: 1800 рублей</p>
+      <form>
+        <label for="quantity5">Количество:</label>
+        <input type="number" id="quantity5" name="quantity5" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 6</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_6.jpg' %}" alt="Телескоп 6">
+      <p>Цена: 2500 рублей</p>
+      <form>
+        <label for="quantity6">Количество:</label>
+        <input type="number" id="quantity6" name="quantity6" min="0" max="10" value="1">
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Телескоп 7</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_7.jpg' %}" alt="Телескоп 7">
+      <p>Цена: 800 рублей</p>
+      <form>
+        <label for="quantity7">Количество:</label>
+        <input type="number" id="quantity7" name="quantity7" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 8</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_8.jpg' %}" alt="Телескоп 8">
+      <p>Цена: 3000 рублей</p>
+      <form>
+        <label for="quantity8">Количество:</label>
+        <input type="number" id="quantity8" name="quantity8" min="0" max="10" value="1">
+      </form>
+    </td>
+    <td>
+      <h3>Телескоп 9</h3>
+      <img src= "{% static 'django_app/img/shop/telescop_9.jpg' %}" alt="Телескоп 9">
+      <p>Цена: 1500 рублей</p>
+      <form>
+        <label for="quantity9">Количество:</label>
+        <input type="number" id="quantity9" name="quantity9" min="0" max="10" value="1">
+      </form>
+    </td>
+  </tr>
+</table>
+    <div>
+                {% load static %}
+                <script src="{% static 'django_app/js/django_app.js' %}"></script>
+        <button class="btn btn-info" onclick="out()">Подтвердить</button>
+        <p id="result"></p>
+    </div>
+
+
+{% endblock %}
